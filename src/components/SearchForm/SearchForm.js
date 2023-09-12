@@ -1,11 +1,11 @@
 import React from "react";
 
-function Footer() {
+function SearchForm() {
     return(
         <header className="header">
-            <h1>Footer</h1>
+            <h1>SearchForm</h1>
         </header>
     )
 }
 
-export default Footer;
+export default SearchForm;
