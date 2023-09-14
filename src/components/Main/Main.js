@@ -9,9 +9,9 @@ import Portfolio from './Portfolio/Portfolio'
 function Main() {
     return(
         <main className="main">
-            <Promo />
+            <div className="main__promo"><Promo /></div>
             <AboutProject />
-            <Techs />
+            <div className="main__techs"><Techs /></div>
             <AboutMe />
             <Portfolio />
         </main>
