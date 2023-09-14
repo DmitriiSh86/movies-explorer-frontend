@@ -1,0 +1,41 @@
+.not-found__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found__title{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 140px;
+    line-height: 169px;
+    font-weight: 400;
+}
+
+.not-found__subtitle{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.not-found__link{
+    margin: 0;
+    padding: 0;
+    color: #3456F3;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.not-found__link:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+}

@@ -1,0 +1,39 @@
+.short-film-switcher__container{
+    max-width: 1280px;
+    margin: 0 auto 118px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+.short-film-switcher__switcher{
+    margin: 0;
+    padding: 0;
+    background-color: #2BE080;
+    width: 34px;
+    height: 14px;
+    border-radius: 17px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.short-film-switcher__round{
+    margin: 2px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.short-film-switcher__title{
+    margin: 0;
+    padding: 0;
+}

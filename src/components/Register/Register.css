@@ -1,0 +1,76 @@
+.register__container {
+    margin: 0, auto;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.register__title {
+    margin: 20px 0 51px 0;
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.register__form {
+    margin: 0;
+    width: 358px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    position: relative;
+}
+
+.register__input {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;    
+    color: black;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid #CCC;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    padding: 0;
+    padding-bottom: 9px;
+}
+
+.register__button {
+    background-color: #3456F3;
+    min-height: 50px;
+    color: white;
+    border-radius: 2px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    margin: 186px 0 14px 0;
+}
+
+.register__button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.register__link {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.register__link:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+}

@@ -1,13 +1,16 @@
 import React from "react";
 import SearchForm from '../SearchForm/SearchForm'
 import MoviesCardList from '../MoviesCardList/MoviesCardList'
+import ShortFilmSwitcher from '../ShortFilmSwitcher/ShortFilmSwitcher'
 
-function Movies() {
+function Movies(props) {
     return(
         <section className="movies">
-            <h1>Movies</h1>
             <SearchForm />
-            <MoviesCardList />
+            <ShortFilmSwitcher />
+            <ul className="movies__container" aria-label="photo">
+                {props.moviesData.map((movie) => <MoviesCardList key={movie._id} movie={movie}/>)}
+            </ul>            
         </section>
     )
 }

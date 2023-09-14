@@ -2,13 +2,16 @@ import React from "react";
 
 import SearchForm from '../SearchForm/SearchForm'
 import MoviesCardList from '../MoviesCardList/MoviesCardList'
+import ShortFilmSwitcher from '../ShortFilmSwitcher/ShortFilmSwitcher'
 
-function SavedMovies() {
+function SavedMovies(props) {
     return(
-        <section className="movies">
-            <h1>SavedMovies</h1>
+        <section className="movies-saved">
             <SearchForm />
-            <MoviesCardList />
+            <ShortFilmSwitcher />
+            <ul aria-label="photo" className="movies-saved__container">
+                {props.moviesData.map((movie) => <MoviesCardList key={movie._id} movie = {movie}/>)}
+            </ul> 
         </section>
     )
 }
