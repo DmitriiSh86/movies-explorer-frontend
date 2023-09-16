@@ -27,6 +27,7 @@
 }
 
 .search-form__button{
+    margin-right: 3px;
     background-color: #3456F3;
     color: white;
     font-size: 11px;
@@ -44,6 +45,11 @@
     align-items: center;
     justify-content: center;
     margin-left: 21.35px;
+}
+
+.search-form__button:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
 }
 
 .search-form__border{

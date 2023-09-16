@@ -3,6 +3,7 @@
     flex-direction: column;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 70px 0 70px;
 }
 
 .about-project__title{
@@ -12,12 +13,13 @@
     font-size: 22px;
     line-height: 27px;
     font-weight: 400;
+    letter-spacing: -0.88px;
 }
 
 .about-project__border{
     width: 100%;
     border: 1px solid black;
-    margin: 0 0 70px 0;
+    margin: 22px 0 70px 0;
 }
 
 .about-project__group{
@@ -39,6 +41,7 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 400;
+    letter-spacing: -0.8px;
 }
 
 .about-project__block-text{
@@ -53,21 +56,28 @@
 .about-project__bar{
     display: flex;
     flex-direction: row;
-    height: 36px;
+    min-height: 36px;
+    box-sizing: border-box;
     align-items: center;
     margin: 0 0 141px 0;
 }
 
 .about-project__bar_backend{
+    height: 36px;
     width: 20%;
     background-color: #2BE080;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-project__bar_frontend{
+    height: 36px;
     width: 80%;
     background-color: #F2F2F2;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-project__text{
@@ -75,6 +85,8 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 .about-project__span{
@@ -83,7 +95,7 @@
     font-size: 14px;
     line-height: 17px;
     font-weight: 500;
-    margin-left: -25px;
-    margin-top: 10px;
+    margin-left: 0;
+    margin-top: 82px;
 }
 

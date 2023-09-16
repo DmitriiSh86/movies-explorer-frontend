@@ -1,5 +1,6 @@
 .register__container {
-    margin: 0, auto;
+    max-width: 396px;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
     display: flex;
@@ -8,19 +9,26 @@
     
 }
 
+.logo__form{
+    margin: 70px 0 20px 0;
+    align-self: flex-start;
+}
+
 .register__title {
-    margin: 20px 0 51px 0;
+    margin: 20px 0 58px 0;
     color: black;
     font-size: 24px;
-    font-weight: 900;
+    line-height: normal;
+    font-weight: 500;
+    align-self: flex-start;
 }
 
 .register__form {
     margin: 0;
-    width: 358px;
+    width: 396px;
     display: flex;
     flex-direction: column;
-    gap: 31px;
+    gap: 42px;
     position: relative;
 }
 
@@ -44,14 +52,16 @@
 
 .register__button {
     background-color: #3456F3;
-    min-height: 50px;
+    min-height: 45px;
     color: white;
     border-radius: 2px;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
     cursor: pointer;
     border: none;
-    margin: 186px 0 14px 0;
+    margin: 108px 0 18px 0;
+    padding: 0;
 }
 
 .register__button:hover{
@@ -59,12 +69,19 @@
     transition: 0.2s ease;
 }
 
+.register__link-group{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
 .register__link {
     margin: 0;
     padding: 0;
-    color: black;
+    color: #3456F3;
     font-weight: 400;
     font-size: 14px;
+    line-height: normal;
     cursor: pointer;
     border: none;
     text-decoration: none;
@@ -78,8 +95,8 @@
 .register__link_text{
     margin: 0;
     padding: 0;
-    color: black;
+    color: #A0A0A0;
     font-weight: 400;
     font-size: 14px;
-    line-height: 15px;
+    line-height: normal;
 }

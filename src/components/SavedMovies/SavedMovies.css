@@ -1,6 +1,6 @@
 .movies-saved{
     margin: 0;
-    padding: 0;
+    padding: 0 70px 0 70px;
 }
 
 .movies-saved__container{
@@ -10,5 +10,5 @@
     padding: 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    row-gap: 20px;
+    gap: 37px 17px;
 }

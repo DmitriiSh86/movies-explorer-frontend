@@ -2,6 +2,13 @@
     max-width: 270px;
     margin: o;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movies-card-list__photo{
+   margin-bottom: 10px;
 }
 
 .movies-card-list__title{
@@ -47,11 +54,13 @@
 
 .movies-card-list__border{
     width: 100%;
-    margin: 29px 0 6px 0;
+    margin: 25px 0 7px 0;
     border-bottom: 1px solid #E8E8E8;
 }
 
 .movies-card-list__duration{
+    margin: 0;
+    padding: 0;
     color: #A0A0A0;
     font-size: 11px;
     line-height: 13px;

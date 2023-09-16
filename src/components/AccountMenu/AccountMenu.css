@@ -1,10 +1,6 @@
 .account__container{
     margin: 0 0 0 0;
     padding: 0;
-    color: black;
-    font-size: 13px;
-    line-height: 12px;
-    font-weight: 500;
     width: 100px;
     height: 32px;
     border-radius: 40px;
@@ -15,7 +11,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 7px;
     cursor: pointer;
     border: none;
@@ -28,6 +24,8 @@
 }
 
 .account__logo-container{
+    margin: 0 3px 0 0;
+    padding: 0;
     width: 26px;
     height: 26px;
     border-radius: 50%;
@@ -39,9 +37,20 @@
     align-items: center;
 }
 
+.account__text{
+    margin: 0 0 0 10px;
+    padding: 0;
+    color: black;
+    font-size: 13px;
+    line-height: 12px;
+    font-weight: 500;
+}
+
 .account__logo{
-    width: 10.383px;
-    height: 10.669px;
+    width: 12px;
+    height: 12px;
+    margin: 0 0 0 0;
+    padding: 0;
 }
 
 .theme__dark_account{

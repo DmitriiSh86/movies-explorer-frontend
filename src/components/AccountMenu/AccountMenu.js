@@ -5,7 +5,7 @@ import logoAccount from "../../images/account.svg";
 function AccountMenu({themeAccount}) {
     return (
         <Link to="/profile" className={`account__container ${themeAccount}`}>
-            Аккаунт
+            <p className="account__text">Аккаунт</p>
             <div className="account__logo-container">
                 <img
                     src={logoAccount}

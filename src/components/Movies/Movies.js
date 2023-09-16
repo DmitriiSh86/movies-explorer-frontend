@@ -2,6 +2,7 @@ import React from "react";
 import SearchForm from '../SearchForm/SearchForm'
 import MoviesCardList from '../MoviesCardList/MoviesCardList'
 import ShortFilmSwitcher from '../ShortFilmSwitcher/ShortFilmSwitcher'
+import More from '../More/More'
 import likeButtonActiv from '../../images/like-activ.svg'
 import likeButtonNotActiv from '../../images/like-not-activ.svg'
 
@@ -11,7 +12,7 @@ function Movies(props) {
         <section className="movies">
             <SearchForm />
             <ShortFilmSwitcher />
-            <ul className="movies__container" aria-label="photo">
+            <ul className="movies__container" aria-label="movies">
                 {props.moviesData.map((movie) => 
                     <MoviesCardList 
                         key={movie._id} 
@@ -19,7 +20,8 @@ function Movies(props) {
                         likeButton={likeButtonActiv}
                         likeButtonNotActiv={likeButtonNotActiv}
                     />)}
-            </ul>            
+            </ul> 
+            <More />           
         </section>
     )
 }

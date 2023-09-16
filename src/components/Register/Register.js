@@ -27,7 +27,7 @@ function Register() {
                 <input onChange={handleChange} id='password' name='password' type='password' placeholder="Пароль" className="register__input" value={formValue.password}></input>
                 <button type="submit" className="register__button">Зарегистрироваться</button>
             </form>
-            <div>
+            <div className="register__link-group">
                 <p className="register__link_text">Уже зарегистрированы?</p>
                 <Link to='/signin' className="register__link">Войти</Link>
             </div>

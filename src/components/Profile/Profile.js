@@ -37,7 +37,7 @@ function Profile({setIsLoggedIn}) {
                 
                 <button type="submit" className="profile__button">Редактировать</button>
             </form>
-            <button type="submit" onClick={logOut} className="profile__link">Выйти из аккаунта</button>
+            <button type="submit" onClick={logOut} className="profile__logout">Выйти из аккаунта</button>
         </div>
     )
 }

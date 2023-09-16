@@ -1,5 +1,6 @@
 .login__container {
-    margin: 0, auto;
+    max-width: 396px;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
     display: flex;
@@ -9,18 +10,20 @@
 }
 
 .login__title {
-    margin: 20px 0 51px 0;
+    margin: 20px 0 58px 0;
     color: black;
     font-size: 24px;
-    font-weight: 900;
+    line-height: normal;
+    font-weight: 500;
+    align-self: flex-start;
 }
 
 .login__form {
     margin: 0;
-    width: 358px;
+    width: 396px;
     display: flex;
     flex-direction: column;
-    gap: 31px;
+    gap: 42px;
     position: relative;
 }
 
@@ -44,14 +47,15 @@
 
 .login__button {
     background-color: #3456F3;
-    min-height: 50px;
+    min-height: 45px;
     color: white;
     border-radius: 2px;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: normal;
     cursor: pointer;
     border: none;
-    margin: 186px 0 14px 0;
+    margin: 178px 0 17px 0;
 }
 
 .login__button:hover{
@@ -59,22 +63,28 @@
     transition: 0.2s ease;
 }
 
+.login__link-group{
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
 .login__link_text{
     margin: 0;
     padding: 0;
-    color: black;
+    color: #A0A0A0;
     font-weight: 400;
     font-size: 14px;
-    line-height: 15px;
+    line-height: normal;
 }
 
 .login__link {
     margin: 0;
     padding: 0;
-    color: black;
+    color: #3456F3;
     font-weight: 400;
     font-size: 14px;
-    line-height: 15px;
+    line-height: normal;
     cursor: pointer;
     border: none;
     text-decoration: none;
