@@ -1,7 +1,12 @@
 import React from "react";
-import likeButtonActiv from '../../images/like-activ.svg'
 
 function MoviesCardList(props) {
+    function durationConvert(min){
+        let hours = Math.trunc(min/60);
+        let minutes = min % 60;
+        return hours + 'ч ' + minutes + 'м';
+    }
+    const time = durationConvert(props.movie.duration)
     return(
         <li className="movies-card-list__container">
             <img className="movies-card-list__photo"
@@ -11,11 +16,11 @@ function MoviesCardList(props) {
             <div className="movies-card-list__bar">
                 <h2 className="movies-card-list__title">{props.movie.nameRU}</h2>
                 <button className="movies-card-list__button">
-                    <img src ={likeButtonActiv} alt="Like" className="movies-card-list__like-activ"/>
+                    <img src ={props.likeButton} alt="Like" className="movies-card-list__like-activ"/>
                 </button>
             </div>
             <div className="movies-card-list__border"></div>
-            <p className="movies-card-list__duration">{props.movie.duration}</p>
+            <p className="movies-card-list__duration">{time}</p>
         </li>
     )
 }
