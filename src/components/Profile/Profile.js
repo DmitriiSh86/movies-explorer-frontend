@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Profile() {
+function Profile({setIsLoggedIn}) {
     const [formValue, setFormValue] = useState({
         name: '',
         email: '',
@@ -13,6 +13,10 @@ function Profile() {
             ...formValue,
             [name]: value
         })
+    }
+
+    function logOut(){
+        setIsLoggedIn(false);
     }
 
     return(
@@ -33,7 +37,7 @@ function Profile() {
                 
                 <button type="submit" className="profile__button">Редактировать</button>
             </form>
-            <button type="submit" className="profile__link">Выйти из аккаунта</button>
+            <button type="submit" onClick={logOut} className="profile__link">Выйти из аккаунта</button>
         </div>
     )
 }

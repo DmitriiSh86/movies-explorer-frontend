@@ -1,0 +1,43 @@
+.nav__container{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.nav__link{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+}
+
+.nav__link:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.nav__link_filmSaved{
+    font-weight: 400;
+}
+
+.theme__dark_nav{
+    color: white;
+}
+
+.nav__link_main{
+    display: none;
+}
+
+@media (max-width: 800px){
+    .nav__container{
+        flex-direction: column;
+    }
+    .nav__link_main{
+        display: block;
+    }
+}

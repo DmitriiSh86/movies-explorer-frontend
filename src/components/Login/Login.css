@@ -59,12 +59,22 @@
     transition: 0.2s ease;
 }
 
+.login__link_text{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+}
+
 .login__link {
     margin: 0;
     padding: 0;
     color: black;
     font-weight: 400;
     font-size: 14px;
+    line-height: 15px;
     cursor: pointer;
     border: none;
     text-decoration: none;

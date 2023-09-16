@@ -1,0 +1,17 @@
+.burger__container{
+    width: 44px;
+    height: 44px;
+    background-color: transparent;
+    border: none;
+    background-image: url('../../images/burger-black.svg');
+    cursor: pointer;
+}
+
+.burger__container:hover{
+    opacity: 0.8;
+    transition: 0.2s ease;
+}
+
+.theme__dark_burger{
+    background-image: url('../../images/burger-white.svg');
+}

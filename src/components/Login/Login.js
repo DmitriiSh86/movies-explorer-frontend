@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import {Link} from 'react-router-dom'
-import logoCircle from '../../images/logo-circle.png';
+import {Link, useNavigate} from 'react-router-dom'
+import Logo from "../Logo/Logo"
 
-function Login() {
+function Login({setIsLoggedIn}) {
+    const navigate = useNavigate();
     const [formValue, setFormValue] = useState({
         name: '',
         email: '',
@@ -17,18 +18,23 @@ function Login() {
         })
     }
 
+    function logIn(){
+        setIsLoggedIn(true);
+        navigate('/')
+    }
+
     return(
         <div className="login__container">
-            <img src ={logoCircle} alt="Логотип" className="logo_circle"/>
+            <Logo logo__class = 'logo__form' />
             <h2 className="login__title">Добро пожаловать!</h2>
             <form className="login__form">
                 <input onChange={handleChange} id='email' name='email' type='email' placeholder="Email" className="login__input" value={formValue.email}></input>
                 <input onChange={handleChange} id='password' name='password' type='password' placeholder="Пароль" className="login__input" value={formValue.password}></input>
-                <button type="submit" className="login__button">Войти</button>
+                <button type="submit" onClick={logIn} className="login__button">Войти</button>
             </form>
-            <div className="login__link">
-                <p className="login__link">Еще не зарегистрированы?</p>
-                <Link to='/sign-in' className="login__link">Регистрация</Link>
+            <div>
+                <p className="login__link_text">Еще не зарегистрированы?</p>
+                <Link to='/signup' className="login__link">Регистрация</Link>
             </div>
             
         </div>

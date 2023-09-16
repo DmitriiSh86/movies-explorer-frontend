@@ -1,28 +1,39 @@
 import React from "react";
-import {Link} from 'react-router-dom'
-import logoCircle from '../../images/logo-circle.png';
-import logoAccount from '../../images/account.svg';
 
-function Header() {
-    return(
+import Logo from "../Logo/Logo"
+import RegAndSign from "../RegAndSign/RegAndSign"
+import AccountMenu from "../AccountMenu/AccountMenu"
+import NavMovies from "../NavMovies/NavMovies"
+import Burger from "../Burger/Burger"
+
+function Header({ isLoggedIn, themeAccount, themeNav, themeBurger, openPopup }) {
+    return (
         <div className="header__container">
-            <Link to='/' className="header__logo_circle">
-                <img src ={logoCircle} alt="Логотип"/>
-            </Link>
-            
-            <div className="header__nav">
-                <Link to='/movies' className="header__link">Фильмы</Link>
-                <Link to='/saved-movies' className="header__link header__link_filmSaved">Сохраненные фильмы</Link>
+            <Logo logo__class = 'logo__header' />
+            <div className="header__menu_nav">
+                {isLoggedIn === true && (
+                    <NavMovies themeNav = {themeNav} />
+                )}
             </div>
-            <Link to='/profile' className="header__link header__account">
-                Аккаунт
-                <div className="header__logo-container">
-                    <img src ={logoAccount} alt="Логотип" className="header__logo-account"/>
-                </div>
-                
-            </Link>
+            <div className="header__menu_account">
+                {isLoggedIn === true && (
+                    <AccountMenu themeAccount = {themeAccount} />
+                )}
+            </div>
+            <div className="header__menu_burger">
+                {isLoggedIn === true && (
+                    <Burger 
+                        themeBurger = {themeBurger}
+                        openPopup = {openPopup}
+                    />
+                )}
+            </div>
+            
+            {isLoggedIn !== true && (
+                <RegAndSign />
+            )}
         </div>
-    )
+    );
 }
 
 export default Header;
