@@ -28,8 +28,28 @@ function Login({setIsLoggedIn}) {
             <Logo logo__class = 'logo__form' />
             <h2 className="login__title">Рады видеть!</h2>
             <form className="login__form">
-                <input onChange={handleChange} id='email' name='email' type='email' placeholder="Email" className="login__input" value={formValue.email}></input>
-                <input onChange={handleChange} id='password' name='password' type='password' placeholder="Пароль" className="login__input" value={formValue.password}></input>
+                <label className="login__input-field">
+                    <input
+                        onChange={handleChange}
+                        id='email'
+                        name='email'
+                        type='email'
+                        className="login__input"
+                        value={formValue.email}>
+                    </input>
+                    <span className="login__input-span">E-mail</span>
+                </label>
+                <label className="login__input-field">
+                    <input
+                        onChange={handleChange}
+                        id='password'
+                        name='password'
+                        type='password'
+                        className="login__input"
+                        value={formValue.password}>
+                    </input>
+                    <span className="login__input-span">Пароль</span>
+                </label>
                 <button type="submit" onClick={logIn} className="login__button">Войти</button>
             </form>
             <div className="login__link-group">

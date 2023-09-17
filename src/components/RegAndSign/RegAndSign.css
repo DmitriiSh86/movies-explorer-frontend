@@ -46,3 +46,21 @@
     opacity: 0.8;
     transition: 0.2s ease;
 }
+
+@media (max-width: 600px){
+    .regandsign__container{
+        gap: 14px;
+    }
+
+    .regandsign__link_sign{
+        width: 54px;
+        height: 26px;
+        font-size: 10px;
+    }
+
+    .regandsign__link_reg{
+        font-size: 10px;
+    }
+
+
+}
