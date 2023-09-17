@@ -12,3 +12,19 @@
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 37px 17px;
 }
+
+@media (max-width: 1100px){
+    .movies-saved{
+        padding: 0 30px 0 30px;
+    }
+
+    .movies-saved__container{
+        gap: 30px 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .movies-saved{
+        padding: 0 10px 0 10px;
+    }
+}

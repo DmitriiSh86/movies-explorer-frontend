@@ -1,11 +1,13 @@
 .profile__container {
-    margin: 0, auto;
+    margin: 0 auto;
     padding: 0;
     width: 100%;
+    height: calc(100vh - 74px);
+    min-height: 450px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    
 }
 
 .profile__title {
@@ -14,15 +16,25 @@
     font-size: 24px;
     line-height: normal;
     font-weight: 500;
+    text-align: center;
 }
 
 .profile__form {
     width: 410px;
+    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile__form-container{
+    width: 410px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .profile__input_container{
@@ -60,19 +72,19 @@
     line-height: normal;
     margin: 0;
     padding: 0;
-    width: 122px;
+    width: 100%;
     height: 14px;
 }
 
 .profile__input_border{
-    margin: 0 0 1px 0;
+    margin: 16px 0 17px 0;
     padding: 0;
     border-bottom: 1px solid #E8E8E8;
     box-sizing: border-box;
 }
 
 .profile__button {
-    margin: 203px 0 0 0;
+    margin: 0 0 0 0;
     background-color: white;
     color: black;
     font-weight: 400;
@@ -88,7 +100,7 @@
 }
 
 .profile__logout {
-    margin: 16px 0 0 0;
+    margin: 16px 0 70px 0;
     background-color: white;
     padding: 0;
     color: #FF3055;
@@ -104,3 +116,43 @@
     opacity: 0.8;
     transition: 0.2s ease;
 }
+
+@media (min-height: 720px){
+    .profile__title {
+        margin: 160px 0 96px 0;
+    }
+
+    .profile__logout {
+        margin-bottom:180px;
+    }
+}
+
+@media (min-height: 1000px){
+    .profile__title {
+        margin: 236px 0 96px 0;
+    }
+
+    .profile__logout {
+        margin-bottom:269px;
+    }
+}
+
+@media(min-height:720px) and (max-width:500px) {
+    .profile__title {
+        margin: 70px 0 80px 0;
+    }
+
+    .profile__logout {
+        margin-bottom:40px;
+        margin-top: 14px;
+        font-size: 12px;
+    }
+
+    .profile__form-container{
+        width: 260px;
+    }
+
+    .profile__button {
+        font-size: 12px;
+    }
+ }

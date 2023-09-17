@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    height: 100vh;
 }
 
 .login__title {
-    margin: 20px 0 58px 0;
+    margin: 40px 0 57px 0;
     color: black;
     font-size: 24px;
     line-height: normal;
@@ -23,8 +23,16 @@
     width: 396px;
     display: flex;
     flex-direction: column;
-    gap: 42px;
-    position: relative;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.login__form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
 }
 
 .login__input-field{
@@ -64,6 +72,7 @@
     line-height: 15px;
     padding: 0;
     padding-bottom: 9px;
+    margin-bottom: 42px;
 }
 
 .login__button {
@@ -76,7 +85,7 @@
     line-height: normal;
     cursor: pointer;
     border: none;
-    margin: 178px 0 17px 0;
+    margin: 0 0 16px 0;
 }
 
 .login__button:hover{
@@ -88,6 +97,7 @@
     display: flex;
     flex-direction: row;
     gap: 6px;
+    margin-bottom: 70px;
 }
 
 .login__link_text{
@@ -115,3 +125,66 @@
     opacity: 0.8;
     transition: 0.2s ease;
 }
+
+@media (min-height: 720px){
+    .login__form-container {
+        margin: 180px 0 0 0;
+    }
+
+    .login__link-group{
+        margin-bottom: 170px;
+    }
+}
+
+@media (min-height: 1000px){
+    .login__form-container {
+        margin: 232px 0 0 0;
+    }
+
+    .login__link-group{
+        margin-bottom: 232px;
+    }
+}
+
+@media(min-height:720px) and (max-width:500px) {
+    .login__form-container {
+        margin: 56px 0 0 0;
+    }
+
+    .login__link-group{
+        margin-bottom: 30px;
+    }
+
+    .login__title {
+        margin: 50px 0 97px 0;
+    }
+ }
+
+ @media (max-width:600px) {
+    .login__form {
+        width: 260px;
+    }
+
+    .login__form{
+        align-self: center;
+    }
+
+    .login__link_text{
+        font-size: 12px;
+    }
+
+    .login__link {
+        font-size: 12px;
+    }
+
+    .login__button {
+        min-height: 45px;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .login__title {
+        align-self: center;
+    }
+ }
+

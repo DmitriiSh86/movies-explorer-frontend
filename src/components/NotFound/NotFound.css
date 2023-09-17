@@ -23,11 +23,9 @@
     line-height: normal;
     font-weight: 400;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
 }
 
 .not-found__subtitle{
-    margin: 8px 0 185px 0;
     padding: 0;
     color: black;
     font-size: 16px;
@@ -35,7 +33,6 @@
     font-weight: 400;
     position: absolute;
     top: 168px;
-
 }
 
 .not-found__link{
@@ -50,10 +47,38 @@
     border: none;
     text-decoration: none;
     position: absolute;
-    bottom: 60px;
+    top: 380px;
 }
 
 .not-found__link:hover{
     opacity: 0.8;
     transition: 0.2s ease;
+}
+
+@media (max-width: 900px){
+    .not-found__title{
+        text-shadow: none;
+    }
+}
+
+@media (max-width: 500px){
+    .not-found__title{
+        font-size: 80px;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .not-found__subtitle{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        top: 94px;
+    }
+
+    .not-found__link{
+        top: 404px;
+        font-size: 12px;
+        font-weight: 400px;
+        line-height: normal;
+    }
 }

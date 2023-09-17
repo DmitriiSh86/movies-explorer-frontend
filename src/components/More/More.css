@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .more__button{
@@ -23,4 +22,15 @@
 .more__button:hover{
     opacity: 0.8;
     transition: 0.2s ease;
+}
+
+@media (max-width: 700px){
+    .more__button{
+        min-width: 240px;
+        min-height: 36px;
+    }
+
+    .more__container{
+        margin: 0 0 148px 0;
+    }
 }

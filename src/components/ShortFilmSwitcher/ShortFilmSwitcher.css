@@ -45,3 +45,21 @@
     background-color: #F2F2F2;
     justify-content:flex-start;
 }
+
+@media (max-width: 1100px){
+    .short-film-switcher__container{
+        flex-direction: row-reverse;
+        margin-bottom: 128px;
+    }
+}
+
+@media (max-width: 700px){
+    .short-film-switcher__container{
+        justify-content: center;
+        margin-bottom: 92px;
+    }
+
+    .short-film-switcher__title{
+        font-size: 11px;
+    }
+}

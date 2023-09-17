@@ -22,8 +22,7 @@ function NavMovies({themeNav}) {
                     Сохраненные фильмы
                 </Link>
                 {location.pathname === "/saved-movies" && <div className="nav__border_saved-movies"></div>}
-            </div>
-            
+            </div> 
         </div>
     );
 }

@@ -9,7 +9,7 @@
 }
 
 .popup__box{
-    min-width: 520px;
+    max-width: 520px;
     height: 100vh;
     background-color: white;
     position: absolute;
@@ -45,5 +45,24 @@
 }
 
 .popup__nav{
-    margin-top: 150px;
+    margin-top: 159px;
+}
+
+@media (max-width: 550px){
+    .popup__box{
+        width: 100%;
+    }
+
+    .popup__close{
+        top: 13px;
+        right: 13px;
+    }
+
+    .popup__nav{
+        margin-top: 145px;
+    }
+
+    .popup__account{
+        margin-bottom: 46px;
+    }
 }

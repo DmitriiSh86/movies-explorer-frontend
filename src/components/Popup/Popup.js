@@ -17,9 +17,7 @@ function Popup({isOpen, popupClose}) {
                     className="popup__close"
                     onClick={popupClose}
                 />
-            </div>
-
-            
+            </div>   
         </div>
     )
 }
