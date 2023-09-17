@@ -32,18 +32,24 @@
     margin: 0 0 146px 0;
 }
 
-.promo__button{
+.promo__link{
+    margin: 0;
+    padding: 0;
+    width: 129px;
+    height: 36px;
+    border-radius: 3px;
+    border: 1px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #073042;
     color: white;
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
-    width: 129px;
-    height: 36px;
-    flex-shrink: 0;
-    border-radius: 3px;
-    border: 1px solid #FFF;
     cursor: pointer;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
 .promo__button:hover{
